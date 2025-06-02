@@ -22,10 +22,10 @@
 				<ListBox Name="MaterialListBox" SelectionMode="Single">
 					<ListBox.ItemTemplate>
 						<DataTemplate DataType="local:Material">
-								<Border BorderBrush="Black" BorderThickness="1" Padding="15" Margin="5" Width="700">
+								<Border BorderBrush="Black" BorderThickness="1" Padding="15" Margin="5" Width="900">
 									<StackPanel Orientation="Horizontal" >
 										<StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-											<StackPanel Orientation="Horizontal">
+											<StackPanel Orientation="Horizontal" Width="535">
 												<TextBlock Text="{Binding Type}" FontSize="20" FontWeight="Bold"/>
 												<TextBlock Text="  |  " FontSize="16"/>
 												<TextBlock Text="{Binding Name}" FontSize="20" FontWeight="Bold"/>

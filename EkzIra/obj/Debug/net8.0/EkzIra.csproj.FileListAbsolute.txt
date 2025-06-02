@@ -65,3 +65,4 @@ C:\Users\blockchain\source\repos\ASDFEDFD\EkzIra\EkzIra\obj\Debug\net8.0\refint\
 C:\Users\blockchain\source\repos\ASDFEDFD\EkzIra\EkzIra\obj\Debug\net8.0\EkzIra.pdb
 C:\Users\blockchain\source\repos\ASDFEDFD\EkzIra\EkzIra\obj\Debug\net8.0\EkzIra.genruntimeconfig.cache
 C:\Users\blockchain\source\repos\ASDFEDFD\EkzIra\EkzIra\obj\Debug\net8.0\ref\EkzIra.dll
+C:\Users\blockchain\source\repos\ASDFEDFD\EkzIra\EkzIra\obj\Debug\net8.0\EkzIra.sourcelink.json
