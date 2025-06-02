@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EkzIra"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		WindowStartupLocation="CenterScreen"
+        x:Class="EkzIra.MainWindow"
+        Title="EkzIra">
+	<Window.Styles>
+		<Style Selector="StackPanel > TextBlock">
+			<Setter Property="Foreground" Value="Black" />
+			<Setter Property="FontFamily" Value="Comic Sans MS" />
+			<Setter Property="FontSize" Value="15" />
+		</Style>
+	</Window.Styles>
+	<Grid>
+		<ScrollViewer VerticalScrollBarVisibility="Auto">
+			<StackPanel Orientation="Vertical" Margin="20">
+				<Image Source="logo.png" Height="40" HorizontalAlignment="Left" Margin="15 15 0 0" />
+				<TextBlock Text="УЧЕТ МАТЕРИАЛОВ" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20"/>
+				<ListBox Name="MaterialListBox" SelectionMode="Single">
+					<ListBox.ItemTemplate>
+						<DataTemplate DataType="local:Material">
+								<Border BorderBrush="Black" BorderThickness="1" Padding="15" Margin="5" Width="700">
+									<StackPanel Orientation="Horizontal" >
+										<StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+											<StackPanel Orientation="Horizontal">
+												<TextBlock Text="{Binding Type}" FontSize="20" FontWeight="Bold"/>
+												<TextBlock Text="  |  " FontSize="16"/>
+												<TextBlock Text="{Binding Name}" FontSize="20" FontWeight="Bold"/>
+											</StackPanel>
+											<StackPanel Orientation="Horizontal">
+												<TextBlock Text="Минимальное количество: " />
+												<TextBlock Text="{Binding MinQuantity}" />
+												<TextBlock Text="{Binding Measure}" />
+											</StackPanel>
+											<StackPanel Orientation="Horizontal">
+												<TextBlock Text="Количество на складе: " />
+												<TextBlock Text="{Binding StockQuantity}" />
+												<TextBlock Text="{Binding Measure}" />
+											</StackPanel>
+											<StackPanel Orientation="Horizontal">
+												<TextBlock Text="Цена: " />
+												<TextBlock Text="{Binding Cost}" />
+												<TextBlock  Text=" / " />
+												<TextBlock  Text="Единица измерения: " />
+												<TextBlock Text="{Binding Measure}" />
+											</StackPanel>
+										</StackPanel>
+										<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="90 15 15 15">
+											<TextBlock Text="Стоимость партии: " FontSize="20" />
+											<TextBlock Text="0,00p" FontSize="20" />
+										</StackPanel>
+									</StackPanel>
+								</Border>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+				<!--<Button Content="tap" Click="Add_Click" />-->
+				<Button Content="add" Click="AddMat_Click" />
+			</StackPanel>
+		</ScrollViewer>
+	</Grid>
+</Window>

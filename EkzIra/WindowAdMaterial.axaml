@@ -1,0 +1,82 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="850"
+        x:Class="EkzIra.WindowAdMaterial"
+        Title="WindowAdMaterial">
+	<Window.Styles>
+		<Style Selector="StackPanel > TextBlock">
+			<Setter Property="FontFamily" Value="Comic Sans MS" />
+			<Setter Property="FontSize" Value="15" />
+		</Style>
+
+		<Style Selector="StackPanel > Button">
+			<Setter Property="Background" Value="#546F94" />
+			<Setter Property="Width" Value="200" />
+			<Setter Property="Height" Value="40" />
+			<Setter Property="HorizontalContentAlignment" Value="Center" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+			<Setter Property="FontFamily" Value="Comic Sans MS" />
+			<Setter Property="FontSize" Value="15" />
+		</Style>
+		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+			<Setter Property="Background" Value="#546F80" />
+		</Style>
+	</Window.Styles>
+	<Grid>
+		<StackPanel Width="700" Height="700" Background="#ABCFCE">
+			<TextBlock Text="ДОБАВЛЕНИЕ МАТЕРИАЛА" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20 20 20 0"  />
+			<StackPanel Orientation="Vertical" Margin="20" >
+				
+				<StackPanel Margin="0 10" Orientation="Horizontal">
+					<StackPanel Orientation="Vertical">
+						<TextBlock Text="Наименование материала: "/>
+						<TextBox Watermark="Добавьте наименование материала..." Name="NameBox" Width="300"/>
+					</StackPanel>
+					<StackPanel Margin="20 0" Orientation="Vertical">
+						<TextBlock Text="Тип материала: "/>
+						<ComboBox Width="300" Name="TypeBox">
+							<sys:String>Пластичные материалы</sys:String>
+							<sys:String>Добавка</sys:String>
+							<sys:String>Электролит</sys:String>
+							<sys:String>Глазурь</sys:String>
+							<sys:String>Пигмент</sys:String>
+						</ComboBox>
+					</StackPanel>
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal" Margin="0 20">
+					<StackPanel Orientation="Vertical">
+						<TextBlock Text="Количество материала на складе: "/>
+						<TextBox Watermark="Добавьте количество материала на складе..." Name="QuantityBox" Width="300"/>
+					</StackPanel>
+
+					<StackPanel Margin="20 0" Orientation="Vertical">
+						<TextBlock Text="Минимальное количество материала: "/>
+						<TextBox Watermark="Добавьте минимальное количество материала..." Name="MinQuantityBox" Width="300"/>
+					</StackPanel>
+				</StackPanel>
+
+				<StackPanel Orientation="Horizontal" Margin="0 20">
+					<StackPanel Orientation="Vertical">
+						<TextBlock Text="Цена единицы товара: "/>
+						<TextBox Watermark="Добавьте цену единицы материала..." Name="CostBox" Width="300" />
+					</StackPanel>
+
+					<StackPanel Margin="20 0" Orientation="Vertical">
+						<TextBlock Text="Единица измерения: "/>
+						<ComboBox Name="MeasureBox">
+							<sys:String>кг</sys:String>
+							<sys:String>л</sys:String>
+						</ComboBox>
+					</StackPanel>
+				</StackPanel>
+			</StackPanel>
+			
+			<Button Content="Добавить продукт" HorizontalAlignment="Center" Click="Add_Click"/>
+			<Button Content="Назад" Click="Return_Click"/>
+		</StackPanel>
+	</Grid>
+</Window>
