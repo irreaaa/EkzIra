@@ -14,6 +14,24 @@ namespace EkzIra
         public MaterialsList()
         {
             Materials = new List<Material>();
+            Materials.Add(new Material
+            {
+                Type = "Пластичные материалы",
+                Name = "Глина",
+                MinQuantity = 5500,
+                StockQuantity = 1570,
+                Cost = 15.29,
+                Measure = "кг"
+            });
+            Materials.Add(new Material
+            {
+                Type = "Добавка",
+                Name = "Перлит",
+                MinQuantity = 1000,
+                StockQuantity = 150,
+                Cost = 13.99,
+                Measure = "л"
+            });
         }
 
         public static MaterialsList Instance

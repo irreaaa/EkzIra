@@ -1,19 +1,25 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Notifications;
 using Avalonia.Interactivity;
-using System;
 using System.Collections.Generic;
 
 namespace EkzIra;
 
-public partial class WindowAdMaterial : Window
+public partial class WindowEditMaterial : Window
 {
     public List<Material> Materials => MaterialsList.Instance.Materials;
-    public WindowAdMaterial()
+    private Material _material;
+    public WindowEditMaterial(Material material)
     {
         InitializeComponent();
+        NameBox.Text = material.Name;
+        TypeBox.SelectedItem = material.Type;
+        CostBox.Text = material.Cost.ToString();
+        QuantityBox.Text = material.StockQuantity.ToString();
+        MinQuantityBox.Text = material.MinQuantity.ToString();
+        MeasureBox.SelectedItem = material.Measure;
     }
-    
+
     private void Return_Click(object? sender, RoutedEventArgs e)
     {
         MainWindow mw = new MainWindow();
@@ -21,19 +27,20 @@ public partial class WindowAdMaterial : Window
         this.Close();
     }
 
-    public void Add_Click(object? sender, RoutedEventArgs e)
+    private void SaveChanges_Click(object? sender, RoutedEventArgs e)
     {
-        string enteredName = NameBox.Text;
+        string newName = NameBox.Text;
         string type = TypeBox.SelectedItem as string;
         string measure = MeasureBox.SelectedItem as string;
-        foreach (var item in Materials) {
-            if (item.Name == enteredName) {
-                ShowError("Такой товар уже есть.");
+        foreach(var item in Materials)
+        {
+            if(item.Name == newName)
+            {
+                ShowError("Материал с таким названием уже есть.");
                 return;
-
             }
         }
-        if(NameBox.Text == null)
+        if (NameBox.Text == null)
         {
             ShowError("Имя или тип материала не могут быть пустыми.");
             return;
@@ -50,38 +57,28 @@ public partial class WindowAdMaterial : Window
             ShowError("Некорректное значение количества.");
             return;
         }
-        if(type == null || measure == null)
+        if (type == null || measure == null)
         {
             ShowError("Значения из выпадающего списка не выбраны.");
             return;
         }
         else
         {
-            Materials.Add(new Material
-            {
-                Name = enteredName,
-                Type = type,
-                MinQuantity = minQuantity,
-                StockQuantity = quantity,
-                Cost = Math.Round(cost, 2),
-                Measure = measure,
-            });
+            _material.Name = newName;
+            _material.Type = type;
+            _material.Measure = measure;
+            _material.Cost = cost;
+            _material.StockQuantity = quantity;
+            _material.MinQuantity = minQuantity;
 
             var success = new WindowNotificationManager(this)
             {
                 Position = NotificationPosition.TopCenter
             };
-            success.Show(new Notification("Готово", "Материал успешно добавлен.", NotificationType.Success));
-
-            NameBox.Text = "";
-            TypeBox.SelectedIndex = -1;
-            CostBox.Text = "";
-            QuantityBox.Text = "";
-            MinQuantityBox.Text = "";
-            MeasureBox.SelectedIndex = -1;
+            success.Show(new Notification("Готово", "Данные материала обновлены.", NotificationType.Success));
         }
-
     }
+
     private void ShowError(string message)
     {
         var error = new WindowNotificationManager(this)

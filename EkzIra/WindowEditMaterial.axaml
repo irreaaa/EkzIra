@@ -3,9 +3,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="850"
-        x:Class="EkzIra.WindowAdMaterial"
-        Title="WindowAdMaterial"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="EkzIra.WindowEditMaterial"
+        Title="WindowEditMaterial"
 		FontFamily="Comic Sans MS">
 	<Window.Styles>
 		<Style Selector="StackPanel > TextBlock">
@@ -29,7 +29,7 @@
 	<Grid>
 		<StackPanel Width="660" Height="500" Background="#ABCFCE">
 			<Button Content="Назад" Width="70" Margin="15" Click="Return_Click" />
-			<TextBlock Text="ДОБАВЛЕНИЕ МАТЕРИАЛА" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20 20 20 0"  />
+			<TextBlock Text="РЕДАКТИРОВАНИЕ МАТЕРИАЛА" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20 20 20 0"  />
 			<StackPanel Orientation="Vertical" Margin="20" >
 				
 				<StackPanel Margin="0 10" Orientation="Horizontal">
@@ -76,7 +76,7 @@
 					</StackPanel>
 				</StackPanel>
 			</StackPanel>
-			<Button Content="Добавить продукт" HorizontalAlignment="Center" Click="Add_Click"/>
+			<Button Content="Сохранить изменения" HorizontalAlignment="Center" Click="SaveChanges_Click"/>
 		</StackPanel>
 	</Grid>
 </Window>
