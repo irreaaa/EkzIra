@@ -14,5 +14,6 @@ namespace EkzIra
         public int StockQuantity { get; set; }
         public double Cost { get; set; }
         public string Measure { get; set; }
+        public int QuantityInWrapper {  get; set; }
     }
 }

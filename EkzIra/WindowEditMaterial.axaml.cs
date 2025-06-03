@@ -1,6 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Notifications;
 using Avalonia.Interactivity;
+using System;
 using System.Collections.Generic;
 
 namespace EkzIra;
@@ -12,12 +13,14 @@ public partial class WindowEditMaterial : Window
     public WindowEditMaterial(Material material)
     {
         InitializeComponent();
+        _material = material;
         NameBox.Text = material.Name;
         TypeBox.SelectedItem = material.Type;
         CostBox.Text = material.Cost.ToString();
         QuantityBox.Text = material.StockQuantity.ToString();
         MinQuantityBox.Text = material.MinQuantity.ToString();
         MeasureBox.SelectedItem = material.Measure;
+        QuantityInWrapper.Text = material.QuantityInWrapper.ToString();
     }
 
     private void Return_Click(object? sender, RoutedEventArgs e)
@@ -34,7 +37,7 @@ public partial class WindowEditMaterial : Window
         string measure = MeasureBox.SelectedItem as string;
         foreach(var item in Materials)
         {
-            if(item.Name == newName)
+            if(item.Name == newName && item != _material)
             {
                 ShowError("Материал с таким названием уже есть.");
                 return;
@@ -52,7 +55,7 @@ public partial class WindowEditMaterial : Window
             return;
         }
 
-        if (!int.TryParse(QuantityBox.Text, out int quantity) || quantity <= 0 || !int.TryParse(MinQuantityBox.Text, out int minQuantity) || minQuantity <= 0)
+        if (!int.TryParse(QuantityBox.Text, out int quantity) || quantity <= 0 || !int.TryParse(MinQuantityBox.Text, out int minQuantity) || minQuantity <= 0 || !int.TryParse(QuantityInWrapper.Text, out int wrQuantity) || wrQuantity <= 0)
         {
             ShowError("Некорректное значение количества.");
             return;
@@ -67,15 +70,14 @@ public partial class WindowEditMaterial : Window
             _material.Name = newName;
             _material.Type = type;
             _material.Measure = measure;
-            _material.Cost = cost;
+            _material.Cost = Math.Round(cost, 2);
             _material.StockQuantity = quantity;
             _material.MinQuantity = minQuantity;
+            _material.QuantityInWrapper = wrQuantity;
 
-            var success = new WindowNotificationManager(this)
-            {
-                Position = NotificationPosition.TopCenter
-            };
-            success.Show(new Notification("Готово", "Данные материала обновлены.", NotificationType.Success));
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 

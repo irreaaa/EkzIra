@@ -15,20 +15,20 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EkzIra
-build_property.ProjectDir = C:\Users\blockchain\source\repos\ASDFEDFD\EkzIra\EkzIra\
+build_property.ProjectDir = C:\Users\blockchain\Source\Repos\EkzIra\EkzIra\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/blockchain/source/repos/ASDFEDFD/EkzIra/EkzIra/App.axaml]
+[C:/Users/blockchain/Source/Repos/EkzIra/EkzIra/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/blockchain/source/repos/ASDFEDFD/EkzIra/EkzIra/MainWindow.axaml]
+[C:/Users/blockchain/Source/Repos/EkzIra/EkzIra/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/blockchain/source/repos/ASDFEDFD/EkzIra/EkzIra/WindowAdMaterial.axaml]
+[C:/Users/blockchain/Source/Repos/EkzIra/EkzIra/WindowAdMaterial.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/blockchain/source/repos/ASDFEDFD/EkzIra/EkzIra/WindowEditMaterial.axaml]
+[C:/Users/blockchain/Source/Repos/EkzIra/EkzIra/WindowEditMaterial.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -21,7 +21,8 @@ namespace EkzIra
                 MinQuantity = 5500,
                 StockQuantity = 1570,
                 Cost = 15.29,
-                Measure = "кг"
+                Measure = "кг",
+                QuantityInWrapper = 30
             });
             Materials.Add(new Material
             {
@@ -30,7 +31,8 @@ namespace EkzIra
                 MinQuantity = 1000,
                 StockQuantity = 150,
                 Cost = 13.99,
-                Measure = "л"
+                Measure = "л",
+                QuantityInWrapper = 50
             });
         }
 

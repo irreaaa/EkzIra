@@ -32,7 +32,7 @@
 			<TextBlock Text="РЕДАКТИРОВАНИЕ МАТЕРИАЛА" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20 20 20 0"  />
 			<StackPanel Orientation="Vertical" Margin="20" >
 				
-				<StackPanel Margin="0 10" Orientation="Horizontal">
+				<StackPanel Margin="0 20" Orientation="Horizontal">
 					<StackPanel Orientation="Vertical">
 						<TextBlock Text="Наименование материала: "/>
 						<TextBox Watermark="Добавьте наименование материала..." Name="NameBox" Width="300"/>
@@ -64,12 +64,17 @@
 				<StackPanel Orientation="Horizontal" Margin="0 20">
 					<StackPanel Orientation="Vertical">
 						<TextBlock Text="Цена единицы товара: "/>
-						<TextBox Watermark="00,00..." Name="CostBox" Width="300" />
+						<TextBox Watermark="00,00..." Name="CostBox" Width="193" />
 					</StackPanel>
 
 					<StackPanel Margin="20 0" Orientation="Vertical">
+						<TextBlock Text="Кол-во в упаковке: "/>
+						<TextBox Name="QuantityInWrapper" Watermark="00..." Width="193" />
+					</StackPanel>
+
+					<StackPanel Orientation="Vertical">
 						<TextBlock Text="Единица измерения: "/>
-						<ComboBox Name="MeasureBox" Width="300">
+						<ComboBox Name="MeasureBox" Width="193">
 							<sys:String>кг</sys:String>
 							<sys:String>л</sys:String>
 						</ComboBox>

@@ -45,7 +45,7 @@ public partial class WindowAdMaterial : Window
             return;
         }
 
-        if (!int.TryParse(QuantityBox.Text, out int quantity) || quantity <= 0 || !int.TryParse(MinQuantityBox.Text, out int minQuantity) || minQuantity <= 0)
+        if (!int.TryParse(QuantityBox.Text, out int quantity) || quantity <= 0 || !int.TryParse(MinQuantityBox.Text, out int minQuantity) || minQuantity <= 0 || !int.TryParse(QuantityInWrapper.Text, out int wrQuantity) || wrQuantity <= 0)
         {
             ShowError("Некорректное значение количества.");
             return;
@@ -65,6 +65,7 @@ public partial class WindowAdMaterial : Window
                 StockQuantity = quantity,
                 Cost = Math.Round(cost, 2),
                 Measure = measure,
+                QuantityInWrapper = wrQuantity
             });
 
             var success = new WindowNotificationManager(this)
@@ -79,6 +80,7 @@ public partial class WindowAdMaterial : Window
             QuantityBox.Text = "";
             MinQuantityBox.Text = "";
             MeasureBox.SelectedIndex = -1;
+            QuantityInWrapper.Text = "";
         }
 
     }
