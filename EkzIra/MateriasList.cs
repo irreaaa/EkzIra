@@ -32,7 +32,8 @@ namespace EkzIra
                 StockQuantity = 150,
                 Cost = 13.99,
                 Measure = "л",
-                QuantityInWrapper = 50
+                QuantityInWrapper = 50,
+                
             });
         }
 

@@ -65,7 +65,7 @@ public partial class WindowAdMaterial : Window
                 StockQuantity = quantity,
                 Cost = Math.Round(cost, 2),
                 Measure = measure,
-                QuantityInWrapper = wrQuantity
+                QuantityInWrapper = wrQuantity,
             });
 
             var success = new WindowNotificationManager(this)
