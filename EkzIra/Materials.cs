@@ -17,14 +17,14 @@ namespace EkzIra
             {
                 if (StockQuantity < MinQuantity)
                 {
-                    int lack = MinQuantity - StockQuantity;
-                    int wrappers = (int)Math.Ceiling((double)lack / QuantityInWrapper);
-                    double total = Convert.ToInt32(Math.Round(wrappers * QuantityInWrapper * Cost, 2));
+                    int lack = MinQuantity - StockQuantity; //3930
+                    int wrappers = (int)Math.Ceiling((double)lack / QuantityInWrapper); //131
+                    double total = Convert.ToDouble(Math.Round(wrappers * QuantityInWrapper * Cost, 2)); //60089,7
                     return total;
                 }
                 else
                 {
-                    return 0;
+                    return 0.00;
                 }
             }
         }

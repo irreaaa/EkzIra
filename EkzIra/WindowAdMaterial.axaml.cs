@@ -33,7 +33,7 @@ public partial class WindowAdMaterial : Window
 
             }
         }
-        if(NameBox.Text == null)
+        if(string.IsNullOrWhiteSpace(enteredName))
         {
             ShowError("Имя или тип материала не могут быть пустыми.");
             return;

@@ -4,6 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		WindowStartupLocation="CenterScreen"
+		Icon="logo.ico"
         x:Class="EkzIra.WindowEditMaterial"
         Title="WindowEditMaterial"
 		FontFamily="Comic Sans MS">
@@ -28,7 +30,7 @@
 	</Window.Styles>
 	<Grid>
 		<StackPanel Width="660" Height="500" Background="#ABCFCE">
-			<Button Content="Назад" Width="70" Margin="15" Click="Return_Click" />
+			<Button Content="Назад" Width="70" Click="Return_Click" HorizontalAlignment="Left" Margin="15" />
 			<TextBlock Text="РЕДАКТИРОВАНИЕ МАТЕРИАЛА" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20 20 20 0"  />
 			<StackPanel Orientation="Vertical" Margin="20" >
 				
@@ -77,11 +79,12 @@
 						<ComboBox Name="MeasureBox" Width="193">
 							<sys:String>кг</sys:String>
 							<sys:String>л</sys:String>
+							<sys:String>м</sys:String>
 						</ComboBox>
 					</StackPanel>
 				</StackPanel>
 			</StackPanel>
-			<Button Content="Сохранить изменения" HorizontalAlignment="Center" Click="SaveChanges_Click"/>
+			<Button Content="Сохранить изменения и вернуться" HorizontalAlignment="Center" Width="300" Click="SaveChanges_Click"/>
 		</StackPanel>
 	</Grid>
 </Window>

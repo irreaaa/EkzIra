@@ -31,10 +31,5 @@ namespace EkzIra
                 this.Close();
             }
         }
-
-        //(5500-1570)/30*15,29
-        //(MinQuantity-StockQuantity)/(округлить в большую сторону)QuantityInWrapper*Cost
-        //мне нужно, чтоб стоимость закупки, если количество на складе меньше, чем минимальное количество, рассчитывалась по логике (MinQuantity-StockQuantity)/(округлить в большую сторону всегда)QuantityInWrapper*Cost
-
     }
 }

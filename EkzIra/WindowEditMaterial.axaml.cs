@@ -3,6 +3,7 @@ using Avalonia.Controls.Notifications;
 using Avalonia.Interactivity;
 using System;
 using System.Collections.Generic;
+using Tmds.DBus.Protocol;
 
 namespace EkzIra;
 
@@ -43,7 +44,7 @@ public partial class WindowEditMaterial : Window
                 return;
             }
         }
-        if (NameBox.Text == null)
+        if (string.IsNullOrWhiteSpace(newName))
         {
             ShowError("Имя или тип материала не могут быть пустыми.");
             return;

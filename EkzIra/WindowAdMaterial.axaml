@@ -4,6 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="850"
+		WindowStartupLocation="CenterScreen"
+		Icon="logo.ico"
         x:Class="EkzIra.WindowAdMaterial"
         Title="WindowAdMaterial"
 		FontFamily="Comic Sans MS">
@@ -45,6 +47,7 @@
 							<sys:String>Электролит</sys:String>
 							<sys:String>Глазурь</sys:String>
 							<sys:String>Пигмент</sys:String>
+							<sys:String>Другой</sys:String>
 						</ComboBox>
 					</StackPanel>
 				</StackPanel>
@@ -77,6 +80,7 @@
 						<ComboBox Name="MeasureBox" Width="193">
 							<sys:String>кг</sys:String>
 							<sys:String>л</sys:String>
+							<sys:String>м</sys:String>
 						</ComboBox>
 					</StackPanel>
 				</StackPanel>

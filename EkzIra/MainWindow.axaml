@@ -5,6 +5,7 @@
         xmlns:local="clr-namespace:EkzIra"
         mc:Ignorable="d" d:DesignWidth="1400" d:DesignHeight="950"
 		WindowStartupLocation="CenterScreen"
+		Icon="logo.ico"
         x:Class="EkzIra.MainWindow"
         Title="EkzIra"
 		FontFamily="Comic Sans MS">
@@ -61,9 +62,9 @@
 												<TextBlock Text="{Binding Measure}" />
 											</StackPanel>
 										</StackPanel>
-										<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="60 15 15 15">
+										<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5 15 15 15">
 											<TextBlock Text="Стоимость партии: " FontSize="20" />
-											<TextBlock Text="{Binding AcqCost, StringFormat={}{0}₽ }" FontSize="20" Width="100"  />
+											<TextBlock Text="{Binding AcqCost, StringFormat={}{0}₽ }" FontSize="20" Width="150" />
 										</StackPanel>
 									</StackPanel>
 								</Border>
