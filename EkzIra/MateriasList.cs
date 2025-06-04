@@ -33,7 +33,6 @@ namespace EkzIra
                 Cost = 13.99,
                 Measure = "л",
                 QuantityInWrapper = 50,
-                
             });
         }
 
@@ -47,19 +46,6 @@ namespace EkzIra
                 }
                 return instance;
             }
-        }
-
-        public void AddMaterial(string type, string name, int minQuantity, int stockQuantity, double cost, string measure)
-        {
-            Materials.Add(new Material
-            {
-                Type = type,
-                Name = name,
-                MinQuantity = minQuantity,
-                StockQuantity = stockQuantity,
-                Cost = cost,
-                Measure = measure
-            });
         }
     }
 }

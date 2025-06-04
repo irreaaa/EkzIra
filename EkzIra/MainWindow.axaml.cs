@@ -1,4 +1,5 @@
 using Avalonia.Controls;
+using Avalonia.Input;
 using Avalonia.Interactivity;
 using System.Collections.Generic;
 
@@ -7,7 +8,6 @@ namespace EkzIra
     public partial class MainWindow : Window
     {
         public List<Material> Materials => MaterialsList.Instance.Materials;
-        public Material _material;
         public MainWindow()
         {
             InitializeComponent();
@@ -31,5 +31,18 @@ namespace EkzIra
                 this.Close();
             }
         }
+
+        private void Sup_Click(object? sender, RoutedEventArgs e)
+        {
+            WindowSuppliers wam = new WindowSuppliers();
+            wam.Show();
+            this.Close();
+        }
+
+
+
+
+
+
     }
 }

@@ -7,7 +7,7 @@
 		WindowStartupLocation="CenterScreen"
 		Icon="logo.ico"
         x:Class="EkzIra.WindowAdMaterial"
-        Title="WindowAdMaterial"
+        Title="ДОБАВЛЕНИЕ МАТЕРИАЛА"
 		FontFamily="Comic Sans MS">
 	<Window.Styles>
 		<Style Selector="StackPanel > TextBlock">

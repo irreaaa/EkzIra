@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EkzIra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7aa394655b813fc2994da8f425919cc560b73d9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af0d218b79a523601130f3a99775b54b63ab4729")]
 [assembly: System.Reflection.AssemblyProductAttribute("EkzIra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EkzIra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

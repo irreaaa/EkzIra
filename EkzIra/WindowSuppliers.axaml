@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:EkzIra"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="EkzIra.WindowSuppliers"
+		WindowStartupLocation="CenterScreen"
+		FontFamily="Comic Sans MS"
+        Title="СПИСОК ПОСТАВЩИКОВ"
+		Icon="/logo.ico">
+	<Window.Styles>
+		<Style Selector="StackPanel > TextBlock">
+			<Setter Property="FontSize" Value="15" />
+		</Style>
+
+		<Style Selector="StackPanel > Button">
+			<Setter Property="Background" Value="#546F94" />
+			<Setter Property="Foreground" Value="#ABCFCE" />
+			<Setter Property="FontSize" Value="15" />
+		</Style>
+
+		<Style Selector="StackPanel > Button:pointerover  /template/  ContentPresenter">
+			<Setter Property="Background" Value="#546F80" />
+			<Setter Property="Foreground" Value="#ABCFCE" />
+		</Style>
+		
+	</Window.Styles>
+	<Grid>
+		<StackPanel>
+			<Button Content="Назад" Margin="15" Click="Return_Click" />
+			<TextBlock Text="СПИСОК ПОСТАВЩИКОВ" Foreground="#546F94" FontSize="25" HorizontalAlignment="Center" Margin="25" FontWeight="Bold" />
+			<ListBox Name="SuppliersListBox" SelectionMode="Single" Background="#ABCFCE" >
+				<ListBox.ItemTemplate>
+					<DataTemplate DataType="local:Supplier">
+						<Border BorderThickness="1" BorderBrush="Black" Padding="15" Width="300" HorizontalAlignment="Center">
+							<StackPanel Orientation="Vertical">
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Поставщик: " FontWeight="Bold" />
+									<TextBlock Text="{Binding Name}" />
+								</StackPanel>
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Рейтинг: " FontWeight="Bold"/>
+									<TextBlock Text="{Binding Rate}" />
+								</StackPanel>
+								<StackPanel Orientation="Horizontal">
+									<TextBlock Text="Дата начала работы: " FontWeight="Bold" />
+									<TextBlock Text="{Binding Date}" />
+								</StackPanel>
+							</StackPanel>
+						</Border>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		</StackPanel>
+	</Grid>
+</Window>

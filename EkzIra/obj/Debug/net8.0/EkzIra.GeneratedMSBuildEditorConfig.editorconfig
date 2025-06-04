@@ -32,3 +32,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/blockchain/Source/Repos/EkzIra/EkzIra/WindowEditMaterial.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/blockchain/Source/Repos/EkzIra/EkzIra/WindowSuppliers.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

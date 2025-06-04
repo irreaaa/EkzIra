@@ -7,7 +7,7 @@
 		WindowStartupLocation="CenterScreen"
 		Icon="logo.ico"
         x:Class="EkzIra.MainWindow"
-        Title="EkzIra"
+        Title="УЧЕТ МАТЕРИАЛОВ"
 		FontFamily="Comic Sans MS">
 	<Window.Styles>
 		<Style Selector="StackPanel > TextBlock">
@@ -33,11 +33,19 @@
 			<StackPanel Orientation="Vertical" Margin="20">
 				<Image Source="logo.png" Height="40" HorizontalAlignment="Left" Margin="15 15 0 0" />
 				<TextBlock Text="УЧЕТ МАТЕРИАЛОВ" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20"/>
-				<ListBox Name="MaterialListBox" SelectionMode="Single">
+				<ListBox Name="MaterialListBox" SelectionMode="Single" Background="#ABCFCE">
 					<ListBox.ItemTemplate>
 						<DataTemplate DataType="local:Material">
 								<Border BorderBrush="Black" BorderThickness="1" Padding="15" Margin="5" Width="900">
 									<StackPanel Orientation="Horizontal" >
+											<StackPanel.ContextMenu>
+												<ContextMenu>
+													<MenuItem Header="Copy">
+														<Button Content="Поставщики" />
+													</MenuItem>
+													<MenuItem Header="Paste"/>
+												</ContextMenu>
+											</StackPanel.ContextMenu>
 										<StackPanel Orientation="Vertical" HorizontalAlignment="Left">
 											<StackPanel Orientation="Horizontal" Width="535">
 												<TextBlock Text="{Binding Type}" FontSize="20" FontWeight="Bold"/>
@@ -72,6 +80,7 @@
 					</ListBox.ItemTemplate>
 				</ListBox>
 				<Button Content="Добавить материал" Click="AddMat_Click" Margin="15"/>
+				<Button Content="Список поставщиков" Click="Sup_Click" Margin="15"/>
 			</StackPanel>
 		</ScrollViewer>
 	</Grid>
