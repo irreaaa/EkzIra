@@ -13,8 +13,8 @@ namespace EkzIra
 
         public SupplierList()
         {
-            var gline = MaterialsList.Instance.Materials.First(m => m.Name == "Глина");
-            var perlit = MaterialsList.Instance.Materials.First(m => m.Name == "Перлит");
+            var gline = MaterialsList.Instance.Materials.FirstOrDefault(m => m.Name == "Глина");
+            var perlit = MaterialsList.Instance.Materials.FirstOrDefault(m => m.Name == "Перлит");
 
             Suppliers = new List<Supplier>();
 

@@ -1,53 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\irisp\\source\\repos\\EkzIra\\",
+  "WorkspaceRootPath": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\windoweditmaterial.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windoweditmaterial.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\windowsuppliers.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windowsuppliers.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\supplierlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\supplierlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\supplierlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\windoweditmaterial.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windoweditmaterial.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\windowsuppliers.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windowsuppliers.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\windowadmaterial.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\windowadmaterial.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windowadmaterial.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\windowadmaterial.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\windowadmaterial.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windowadmaterial.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\materiaslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\materiaslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\materiaslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\windowsuppliers.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\windowsuppliers.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windowsuppliers.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\windoweditmaterial.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\windoweditmaterial.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\windoweditmaterial.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\irisp\\source\\repos\\ekzira\\ekzira\\materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|c:\\users\\blockchain\\source\\repos\\ekzira1\\ekzira\\materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29DE64A9-4DDD-4802-8756-8E532DB245AA}|EkzIra\\EkzIra.csproj|solutionrelative:ekzira\\materials.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -72,9 +72,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Materials.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\Materials.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\Materials.cs",
               "RelativeDocumentMoniker": "EkzIra\\Materials.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\Materials.cs",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\Materials.cs",
               "RelativeToolTip": "EkzIra\\Materials.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA0wBIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -84,36 +84,34 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "WindowSuppliers.axaml",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowSuppliers.axaml",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowSuppliers.axaml",
               "RelativeDocumentMoniker": "EkzIra\\WindowSuppliers.axaml",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowSuppliers.axaml",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowSuppliers.axaml",
               "RelativeToolTip": "EkzIra\\WindowSuppliers.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-04T12:13:46.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WindowSuppliers.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowSuppliers.axaml.cs",
-              "RelativeDocumentMoniker": "EkzIra\\WindowSuppliers.axaml.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowSuppliers.axaml.cs",
-              "RelativeToolTip": "EkzIra\\WindowSuppliers.axaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T12:13:44.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T12:13:46.568Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "WindowSuppliers.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowSuppliers.axaml.cs",
+              "RelativeDocumentMoniker": "EkzIra\\WindowSuppliers.axaml.cs",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowSuppliers.axaml.cs",
+              "RelativeToolTip": "EkzIra\\WindowSuppliers.axaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwBEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T12:13:44.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "SupplierList.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\SupplierList.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\SupplierList.cs",
               "RelativeDocumentMoniker": "EkzIra\\SupplierList.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\SupplierList.cs",
-              "RelativeToolTip": "EkzIra\\SupplierList.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\SupplierList.cs*",
+              "RelativeToolTip": "EkzIra\\SupplierList.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-04T11:40:58.278Z",
               "EditorCaption": ""
@@ -122,35 +120,34 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Supplier.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\Supplier.cs",
               "RelativeDocumentMoniker": "EkzIra\\Supplier.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\Supplier.cs",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\Supplier.cs",
               "RelativeToolTip": "EkzIra\\Supplier.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T11:36:42.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T11:36:42.377Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "WindowEditMaterial.axaml",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowEditMaterial.axaml",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowEditMaterial.axaml",
               "RelativeDocumentMoniker": "EkzIra\\WindowEditMaterial.axaml",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowEditMaterial.axaml",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowEditMaterial.axaml",
               "RelativeToolTip": "EkzIra\\WindowEditMaterial.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-03T07:48:33.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WindowEditMaterial.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowEditMaterial.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowEditMaterial.axaml.cs",
               "RelativeDocumentMoniker": "EkzIra\\WindowEditMaterial.axaml.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowEditMaterial.axaml.cs*",
-              "RelativeToolTip": "EkzIra\\WindowEditMaterial.axaml.cs*",
-              "ViewState": "AgIAADMAAAAAAAAAAAAIwC8AAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowEditMaterial.axaml.cs",
+              "RelativeToolTip": "EkzIra\\WindowEditMaterial.axaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwE4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T07:48:33.279Z",
               "EditorCaption": ""
@@ -159,64 +156,59 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "WindowAdMaterial.axaml",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowAdMaterial.axaml",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowAdMaterial.axaml",
               "RelativeDocumentMoniker": "EkzIra\\WindowAdMaterial.axaml",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowAdMaterial.axaml",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowAdMaterial.axaml",
               "RelativeToolTip": "EkzIra\\WindowAdMaterial.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-02T10:06:29.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T10:06:29.474Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "WindowAdMaterial.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowAdMaterial.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowAdMaterial.axaml.cs",
               "RelativeDocumentMoniker": "EkzIra\\WindowAdMaterial.axaml.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\WindowAdMaterial.axaml.cs",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\WindowAdMaterial.axaml.cs",
               "RelativeToolTip": "EkzIra\\WindowAdMaterial.axaml.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAuwBwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:06:29.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T10:06:29.297Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "MateriasList.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\MateriasList.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\MateriasList.cs",
               "RelativeDocumentMoniker": "EkzIra\\MateriasList.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\MateriasList.cs",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\MateriasList.cs",
               "RelativeToolTip": "EkzIra\\MateriasList.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwCAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T08:56:36.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\MainWindow.axaml",
-              "RelativeDocumentMoniker": "EkzIra\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\MainWindow.axaml",
-              "RelativeToolTip": "EkzIra\\MainWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-02T08:24:02.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T08:56:36.269Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "EkzIra\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\MainWindow.axaml",
+              "RelativeToolTip": "EkzIra\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-02T08:24:02.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "EkzIra\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\irisp\\source\\repos\\EkzIra\\EkzIra\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\blockchain\\source\\repos\\EkzIra1\\EkzIra\\MainWindow.axaml.cs",
               "RelativeToolTip": "EkzIra\\MainWindow.axaml.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwDMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T08:23:59.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T08:23:59.055Z"
             }
           ]
         }
