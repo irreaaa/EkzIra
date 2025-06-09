@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="EkzIra.WindowAccounting"
+        Title="УЧЕТ МАТЕРИАЛОВ"
+		Icon="/logo.ico"
+		FontFamily="Comic Sans MS"
+		WindowStartupLocation="CenterScreen">
+	<Window.Styles>
+		<Style Selector="StackPanel > Button">
+			<Setter Property="Background" Value="#546F94" />
+			<Setter Property="Foreground" Value="#ABCFCE" />
+			<Setter Property="FontSize" Value="15" />
+			<Setter Property="Width" Value="150" />
+			<Setter Property="HorizontalContentAlignment" Value="Center" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+		</Style>
+		<Style Selector="StackPanel > Button:pointerover  /template/  ContentPresenter">
+			<Setter Property="Background" Value="#546F84"/>
+			<Setter Property="Foreground" Value="#ABCFCE"/>
+		</Style>
+	</Window.Styles>
+	<Grid Background="White">
+		<StackPanel>
+			<Button Click="Return_Click" Content="Назад" />
+		</StackPanel>
+	</Grid>
+</Window>

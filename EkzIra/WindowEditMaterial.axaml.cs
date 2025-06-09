@@ -45,7 +45,7 @@ public partial class WindowEditMaterial : Window
             }
         }
         if (string.IsNullOrWhiteSpace(newName))
-        {
+        {   
             ShowError("Имя или тип материала не могут быть пустыми.");
             return;
         }

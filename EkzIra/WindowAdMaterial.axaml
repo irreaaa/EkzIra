@@ -28,7 +28,7 @@
 			<Setter Property="Foreground" Value="#ABCFCE" />
 		</Style>
 	</Window.Styles>
-	<Grid>
+	<Grid Background="White">
 		<StackPanel Width="660" Height="500" Background="#ABCFCE">
 			<Button Content="Назад" Width="70" Margin="15" Click="Return_Click" />
 			<TextBlock Text="ДОБАВЛЕНИЕ МАТЕРИАЛА" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20 20 20 0"  />

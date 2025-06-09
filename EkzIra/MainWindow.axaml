@@ -3,12 +3,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EkzIra"
-        mc:Ignorable="d" d:DesignWidth="1400" d:DesignHeight="950"
-		WindowStartupLocation="CenterScreen"
-		Icon="logo.ico"
+        mc:Ignorable="d"
+        d:DesignWidth="1400"
+        d:DesignHeight="950"
         x:Class="EkzIra.MainWindow"
         Title="УЧЕТ МАТЕРИАЛОВ"
-		FontFamily="Comic Sans MS">
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Comic Sans MS"
+        Icon="logo.ico">
+
 	<Window.Styles>
 		<Style Selector="StackPanel > TextBlock">
 			<Setter Property="Foreground" Value="Black" />
@@ -23,64 +26,83 @@
 			<Setter Property="VerticalContentAlignment" Value="Center" />
 			<Setter Property="FontSize" Value="15" />
 		</Style>
-		<Style Selector="StackPanel > Button:pointerover  /template/ ContentPresenter">
+		<Style Selector="StackPanel > Button:pointerover /template/ ContentPresenter">
 			<Setter Property="Background" Value="#546F80" />
 			<Setter Property="Foreground" Value="#ABCFCE" />
 		</Style>
 	</Window.Styles>
-	<Grid>
+
+	<Grid Background="White">
 		<ScrollViewer VerticalScrollBarVisibility="Auto">
 			<StackPanel Orientation="Vertical" Margin="20">
-				<Image Source="logo.png" Height="40" HorizontalAlignment="Left" Margin="15 15 0 0" />
-				<TextBlock Text="УЧЕТ МАТЕРИАЛОВ" HorizontalAlignment="Center" FontSize="25" Foreground="#546F94" FontWeight="Bold" Margin="20"/>
-				<ListBox Name="MaterialListBox" SelectionMode="Single" Background="#ABCFCE">
+				<Image Source="logo.png" Height="40" HorizontalAlignment="Left" Margin="15,15,0,0" />
+				<TextBlock Text="УЧЕТ МАТЕРИАЛОВ"
+                           HorizontalAlignment="Center"
+                           FontSize="25"
+                           Foreground="#546F94"
+                           FontWeight="Bold"
+                           Margin="20"/>
+				<ListBox Name="MaterialListBox"
+                         Background="White"
+                         SelectionMode="Single">
 					<ListBox.ItemTemplate>
 						<DataTemplate DataType="local:Material">
-								<Border BorderBrush="Black" BorderThickness="1" Padding="15" Margin="5" Width="900">
-									<StackPanel Orientation="Horizontal" >
-											<StackPanel.ContextMenu>
-												<ContextMenu>
-													<MenuItem Header="Copy">
-														<Button Content="Поставщики" />
-													</MenuItem>
-													<MenuItem Header="Paste"/>
-												</ContextMenu>
-											</StackPanel.ContextMenu>
-										<StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-											<StackPanel Orientation="Horizontal" Width="535">
-												<TextBlock Text="{Binding Type}" FontSize="20" FontWeight="Bold"/>
-												<TextBlock Text="  |  " FontSize="16"/>
-												<TextBlock Text="{Binding Name}" FontSize="20" FontWeight="Bold"/>
-											</StackPanel>
-											<StackPanel Orientation="Horizontal">
-												<TextBlock Text="Минимальное количество: " />
-												<TextBlock Text="{Binding MinQuantity}" />
-												<TextBlock Text="{Binding Measure}" />
-											</StackPanel>
-											<StackPanel Orientation="Horizontal">
-												<TextBlock Text="Количество на складе: " />
-												<TextBlock Text="{Binding StockQuantity}" />
-												<TextBlock Text="{Binding Measure}" />
-											</StackPanel>
-											<StackPanel Orientation="Horizontal">
-												<TextBlock Text="Цена: " />
-												<TextBlock Text="{Binding Cost}" />
-												<TextBlock  Text=" / " />
-												<TextBlock  Text="Единица измерения: " />
-												<TextBlock Text="{Binding Measure}" />
-											</StackPanel>
+							<Border Background="#ABCFCE" BorderBrush="Black"
+                                    BorderThickness="1"
+                                    Padding="15"
+                                    Margin="5"
+                                    Width="900"
+									PointerPressed="MaterialItem_PointerPressed">
+
+								<StackPanel Orientation="Horizontal">
+									<StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+										<StackPanel Orientation="Horizontal" Width="535">
+											<TextBlock Text="{Binding Type}" FontSize="20" FontWeight="Bold"/>
+											<TextBlock Text="  |  " FontSize="16"/>
+											<TextBlock Text="{Binding Name}" FontSize="20" FontWeight="Bold"/>
 										</StackPanel>
-										<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5 15 15 15">
-											<TextBlock Text="Стоимость партии: " FontSize="20" />
-											<TextBlock Text="{Binding AcqCost, StringFormat={}{0}₽ }" FontSize="20" Width="150" />
+
+										<StackPanel Orientation="Horizontal">
+											<TextBlock Text="Минимальное количество: " />
+											<TextBlock Text="{Binding MinQuantity}" />
+											<TextBlock Text="{Binding Measure}" />
+										</StackPanel>
+
+										<StackPanel Orientation="Horizontal">
+											<TextBlock Text="Количество на складе: " />
+											<TextBlock Text="{Binding StockQuantity}" />
+											<TextBlock Text="{Binding Measure}" />
+										</StackPanel>
+
+										<StackPanel Orientation="Horizontal">
+											<TextBlock Text="Цена: " />
+											<TextBlock Text="{Binding Cost}" />
+											<TextBlock Text=" / " />
+											<TextBlock Text="Единица измерения: " />
+											<TextBlock Text="{Binding Measure}" />
 										</StackPanel>
 									</StackPanel>
-								</Border>
+
+									<StackPanel Orientation="Horizontal"
+                                                HorizontalAlignment="Right"
+                                                Margin="5,15,15,15">
+										<TextBlock Text="Стоимость партии: " FontSize="20" />
+										<TextBlock Text="{Binding AcqCost, StringFormat={}{0}₽ }"
+                                                   FontSize="20"
+                                                   Width="150" />
+									</StackPanel>
+								</StackPanel>
+							</Border>
 						</DataTemplate>
 					</ListBox.ItemTemplate>
 				</ListBox>
-				<Button Content="Добавить материал" Click="AddMat_Click" Margin="15"/>
-				<Button Content="Список поставщиков" Click="Sup_Click" Margin="15"/>
+
+				<Button Content="Добавить материал"
+                        Click="AddMat_Click"
+                        Margin="15"/>
+				<!--<Button Content="Список поставщиков"
+                        Click="Sup_Click"
+                        Margin="15"/>-->
 			</StackPanel>
 		</ScrollViewer>
 	</Grid>

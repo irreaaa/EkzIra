@@ -11,20 +11,19 @@ namespace EkzIra
         public static SupplierList _instance;
         public List<Supplier> Suppliers;
 
-        public SupplierList() {
+        public SupplierList()
+        {
+            var gline = MaterialsList.Instance.Materials.First(m => m.Name == "Глина");
+            var perlit = MaterialsList.Instance.Materials.First(m => m.Name == "Перлит");
+
             Suppliers = new List<Supplier>();
-            var supplierMaterial = new List<Material>()
-            {
-                MaterialsList.Instance.Materials.First(m => m.Name == "Глина"),
-                MaterialsList.Instance.Materials.First(m => m.Name == "Перлит")
-            };
 
             Suppliers.Add(new Supplier
             {
                 Name = "БрянскСтройресурс",
                 Rate = 8,
                 Date = "20.12.2015",
-                Materials = supplierMaterial
+                Materials = new List<Material> { gline }
             });
 
             Suppliers.Add(new Supplier
@@ -32,7 +31,7 @@ namespace EkzIra
                 Name = "ГорТехРазработка",
                 Rate = 9,
                 Date = "27.12.2021",
-                Materials = supplierMaterial
+                Materials = new List<Material> { gline }
             });
 
             Suppliers.Add(new Supplier
@@ -40,9 +39,10 @@ namespace EkzIra
                 Name = "МосКарьер",
                 Rate = 2,
                 Date = "07.07.2012",
-                Materials = supplierMaterial
+                Materials = new List<Material> { perlit }
             });
         }
+
 
         public static SupplierList Instance
         {

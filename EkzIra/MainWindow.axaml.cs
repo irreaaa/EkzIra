@@ -8,41 +8,65 @@ namespace EkzIra
     public partial class MainWindow : Window
     {
         public List<Material> Materials => MaterialsList.Instance.Materials;
+
         public MainWindow()
         {
             InitializeComponent();
             MaterialListBox.ItemsSource = Materials;
-            MaterialListBox.SelectionChanged += SelectedMaterial_Click;
         }
 
         private void AddMat_Click(object? sender, RoutedEventArgs e)
         {
-            WindowAdMaterial wam = new WindowAdMaterial();
+            var wam = new WindowAdMaterial();
             wam.Show();
             this.Close();
         }
 
-        private void SelectedMaterial_Click(object? sender, RoutedEventArgs e)
+        private void MaterialItem_PointerPressed(object? sender, PointerPressedEventArgs e)
         {
-            if(MaterialListBox.SelectedItem is Material selectedItem)
+            var point = e.GetCurrentPoint(this);
+            var border = sender as Border;
+            if (border == null)
+                return;
+
+            var material = border.DataContext as Material;
+            if (material == null)
+                return;
+
+            if (point.Properties.IsLeftButtonPressed)
             {
-                WindowEditMaterial wem = new WindowEditMaterial(selectedItem);
-                wem.Show();
-                this.Close();
+                if (MaterialListBox.SelectedItem is Material selectedItem)
+                {
+                    var wem = new WindowEditMaterial(selectedItem);
+                    wem.Show();
+                    this.Close();
+                }
+            }
+            else if (point.Properties.IsRightButtonPressed)
+            {
+                e.Handled = true;
+
+                var contextMenu = new ContextMenu();
+
+                var suppliersItem = new MenuItem { Header = "Поставщики" };
+                suppliersItem.Click += (s, args) =>
+                {
+                    var ws = new WindowSuppliers(material); 
+                    ws.Show();
+                    this.Close();
+                };
+
+                var accountingItem = new MenuItem { Header = "Учет партий" };
+                accountingItem.Click += (s, args) =>
+                {
+                    var wa = new WindowAccounting();
+                    wa.Show();
+                    this.Close();
+                };
+
+                contextMenu.ItemsSource = new[] { suppliersItem, accountingItem };
+                contextMenu.Open(border);
             }
         }
-
-        private void Sup_Click(object? sender, RoutedEventArgs e)
-        {
-            WindowSuppliers wam = new WindowSuppliers();
-            wam.Show();
-            this.Close();
-        }
-
-
-
-
-
-
     }
 }
